@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pompeo</title>
+	<link rel="stylesheet"  href="css/estilo.css">
+</head>
+<body>
+	<form method="POST" action="form.php">
+		<div class="form-group">
+			<label for="nome"><b>Nome<b></label>
+			<p>
+			<input type = "text" name="nome" id="nome" class="form-control" placeholder= "Digite o seu nome"required>
+		</div>
+
+		<div class="form-group">
+			<p>
+			<label for="email">E-mail</label>
+			<p>
+			<input type = "email" name="email" id="email" class="form-control" placeholder= "seu@email.com.br"required>
+		</div>
+
+		<div class="form-group">
+			<p>
+			<label for="date">Nascimento</label>
+			<p>
+			<input type = "date" name="nascimento" id="nascimento" class="form-control"required min="">
+		</div>
+
+		<div class="form-group">
+			<p>
+			<label>Sexo</label>
+			<p>
+			<input type = "radio" name="masculino" id="masculino">
+			<label for="masculino">Masculino</label>
+			<input type = "radio" name="feminino" id="feminino" >
+			<label for="masculino">Feminino</label>
+		</div>
+
+		<div class="form-group">
+			<p>
+			<label for="li">Li o contrato </label>
+			<input type = "checkbox" name="li" id="li"required checked>
+		</div>
+
+		<div class="form-group">
+			<p>
+			<label for="volume">Volume</label>
+			<p>
+			<input type = "range" name="volume" id="volume" min="100" value="25">
+		</div>
+
+		<div class="form-group">
+			<p>
+			<label for="meter">Bateria</label>
+			<meter min="0" max="100" low="15" value="50">12</meter>
+			<p>
+			<input type = "range" name="meter" id="volume">
+		</div>
+
+		<div class="form-group">
+			<p>
+			<label for="meter">Carregando</label>
+			<progress min="0" max="100"  value="50">60%</progress>
+			<p>	
+			<input type = "range" name="volume" id="volume">
+		</div>
+
+		<div class="form-group">
+			<p>
+			<label for="ano">ano fabricação</label>
+			<p>	
+			<input type = "number" name="ano" id="ano" min="1920" step="20" max="2016" class="form-control">
+		</div>
+
+		<div class="form-group">
+			<p>
+			<label for="cor">Cor</label>
+			<p>	
+			<input type = "color" name="cor" id="cor"  class="form-control">
+		</div>
+
+		<div class="form-group">
+			<p>
+			<label for="url">URL</label>
+			<p>	
+			<input type = "url" name="url" id="url"  class="form-control">
+		</div>
+
+		<div class="form-group">
+			<p>
+			<label for="busca">Busca</label>
+			<p>	
+			<input type = "search" name="busca" id="busca"  class="form-control">
+		</div>
+
+
+		<div>
+			<button type="submit" class="btn btn-primary">Cadastrar</button>
+
+		</div>
+	</form>
+
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
